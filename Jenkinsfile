@@ -1,5 +1,5 @@
 pipeline {
-   agent any
+   agent { label "fargate-agent-label" }
 
    stages {
       stage('Hello') {
